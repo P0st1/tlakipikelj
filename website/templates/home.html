@@ -1,0 +1,850 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tlaki Pikelj</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href=" {% static 'website/assets/img/favicon.png' %} " rel="icon">
+  <link href=" {% static 'website/assets/img/apple-touch-icon.png' %} " rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" {% static 'website/assets/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/bootstrap-icons/bootstrap-icons.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/aos/aos.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/swiper/swiper-bundle.min.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/glightbox/css/glightbox.min.css' %} " rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href=" {% static 'website/assets/css/main.css' %} " rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Updated: Aug 15 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href=" {% static 'website/home.html' %} " class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src=" {% static 'website/assets/img/logo.png' %} " alt=""> -->
+        <h1 class="sitename">TP</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Domov<br></a></li>
+          <li><a href="#about">O nas</a></li>
+          <li><a href="#services">Storitve</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          {% comment %} <li><a href=" {% static 'website/#team' %} ">Team</a></li> {% endcomment %}
+          {% comment %} <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> {% endcomment %}
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Pričnite</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src=" {% static 'website/assets/img/ozadjeslika.jpg' %} " alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-6 col-lg-8">
+            <h2>Strokovnjaki za tlake <span>.</span></h2>
+            <p>Za vsak dom, delavnico ali industrijsko halo</p>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-cash"></i>
+              <h3>Ugodno</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-clock"></i>
+              <h3>Hitro</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="bi bi-shield-lock"></i>
+              <h3>Zanesljivo</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="bi bi-tools"></i>
+              <h3>Strokovno</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="icon-box">
+              <i class="bi bi-house-door"></i>
+              <h3>Kakovostno</h3>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="{% static 'website/assets/img/firstpic.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Strokovnjaki za vse vrste tlakov</h3>
+            <p class="fst-italic">
+              Kjer kakovost, natančnost in trajnost stopijo skupaj.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Izvajamo industrijske, dekorativne in zunanje tlake.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Uporabljamo najnovejša orodja, sodobne materiale in preverjene tehnike.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Vsak projekt obravnavamo individualno – zanesljivo in prilagojeno vašim potrebam.</span></li>
+            </ul>
+            
+          </div>
+        </div>
+    
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src=" {% static 'website/assets/img/vlivanje.webp' %} " alt=""></div>
+          <div class="col-lg-6">
+
+            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h4>Klic ali povpraševanje</h4>
+                <p>Stranka nas kontaktira za informativni pogovor ali ponudbo.</p>
+              </div>
+            </div>
+            
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-eye flex-shrink-0"></i>
+              <div>
+                <h4>Brezplačen ogled</h4>
+                <p>Opravimo ogled objekta in svetujemo glede izvedbe.</p>
+              </div>
+            </div>
+            
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-pencil-square flex-shrink-0"></i>
+              <div>
+                <h4>Izdelava ponudbe</h4>
+                <p>Po ogledu pripravimo natančno ponudbo brez skritih stroškov.</p>
+              </div>
+            </div>
+            
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-tools flex-shrink-0"></i>
+              <div>
+                <h4>Izvedba tlakov</h4>
+                <p>Profesionalna izvedba del v dogovorjenem roku.</p>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Storitve</h2>
+        <p>Kaj vam ponujamo</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3>Strojni estrihi</h3>
+              <p>Estrihi za stanovanjske in poslovne prostore.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h3>Industrijski tlaki</h3>
+              <p>Robustni tlaki za skladišča, hale in industrijske prostore – odporni na visoke obremenitve.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-disc"></i>
+              </div>
+              <h3>Brušenje tlakov</h3>
+              <p>Natančno brušenje za ravne in estetsko dovršene površine.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-scissors"></i>
+              </div>
+              <h3>Dilitacije</h3>
+              <p>Pravilno izvedene dilitacije preprečijo razpoke in omogočajo dolgoročno stabilnost tlakov.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+              <h3>Hidroizolacije</h3>
+              <p>Zaščita vaših prostorov pred vlago in zamakanjem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-box"></i>
+              </div>
+              <h3>Ostale storitve</h3>
+              <p>Dodatne rešitve za vse vrste tlakov in površin.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src=" {% static 'website/assets/img/2323.png' %} " alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Smo vas že prepričali?</h3>
+              <p>Če je temu tako, vas vabimo, da stopite v stik z nami. Z veseljem bomo sodelovali z vami.</p>
+              <a class="cta-btn" href="#">Kontaktirajte nas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfelj</h2>
+        <p>Oglejte si naše projekte</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Vse</li>
+            <li data-filter=".filter-app">Strojni tlaki</li>
+            <li data-filter=".filter-product">Brušen beton</li>
+            <li data-filter=".filter-branding">Dilitacije</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-1.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Strojni tlaki 1</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Brušen beton 1</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-3.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dilitacije 1</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-4.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Strojni tlaki 2</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-5.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Brušen beton 2</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-6.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dilitacije 2</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-7.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Strojni tlaki 3</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-8.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Brušen beton 3</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-9.jpg' %} " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dilitacije 3</h4>
+                <p>Opis</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    {% comment %} <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-lg-5">
+            <img src=" {% static 'website/assets/img/stats-img.jpg' %} " alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
+
+            <h3 class="fw-bold fs-2 mb-3">Voluptatem dignissimos provident quasi</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p>
+
+            <div class="row gy-4">
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-headset flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-people flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section --> {% endcomment %}
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src=" {% static 'website/assets/img/testimonials-bg.jpg' %} " class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src=" {% static 'website/assets/img/testimonials/testimonials-1.jpg' %} " class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src=" {% static 'website/assets/img/testimonials/testimonials-2.jpg' %} " class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src=" {% static 'website/assets/img/testimonials/testimonials-3.jpg' %} " class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src=" {% static 'website/assets/img/testimonials/testimonials-4.jpg' %} " class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src=" {% static 'website/assets/img/testimonials/testimonials-5.jpg' %} " class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    {% comment %} <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>our Team</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src=" {% static 'website/assets/img/team/team-1.jpg' %} " class="img-fluid" alt="">
+                <div class="social">
+                  <a href=" {% static 'website/' %} "><i class="bi bi-twitter-x"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-facebook"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-instagram"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src=" {% static 'website/assets/img/team/team-2.jpg' %} " class="img-fluid" alt="">
+                <div class="social">
+                  <a href=" {% static 'website/' %} "><i class="bi bi-twitter-x"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-facebook"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-instagram"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src=" {% static 'website/assets/img/team/team-3.jpg' %} " class="img-fluid" alt="">
+                <div class="social">
+                  <a href=" {% static 'website/' %} "><i class="bi bi-twitter-x"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-facebook"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-instagram"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src=" {% static 'website/assets/img/team/team-4.jpg' %} " class="img-fluid" alt="">
+                <div class="social">
+                  <a href=" {% static 'website/' %} "><i class="bi bi-twitter-x"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-facebook"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-instagram"></i></a>
+                  <a href=" {% static 'website/' %} "><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section --> {% endcomment %}
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kontakt</h2>
+        <p>Stopite v stik</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        {% comment %} <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps --> {% endcomment %}
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Naslov</h3>
+                <p>Gradišče pri Trebnjem, 8210 Trebnje</p>
+              </div>
+            </div><!-- End Info Item --> 
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Pokličite</h3>
+                <p>040 823 788</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>E-pošta</h3>
+                <p>tlakipikelj@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="{% url 'home' %}" method="post" class="php-email-form">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Vaše Ime" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="text" class="form-control" name="phone" placeholder="Vaš Telefon" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Zadeva" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Sporočilo" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Pošlji</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href=" {% static 'website/index.html' %} " class="logo d-flex align-items-center">
+              <span class="sitename">Tlaki Pikelj</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Gradišče pri Trebnjem</p>
+              <p>Trebnje, 8210</p>
+              <p class="mt-3"><strong>Telefon:</strong> <span>040 823 788</span></p>
+              <p><strong>Email:</strong> <span>tlakipikelj@gmail.com</span></p>
+            </div>
+            {% comment %} <div class="social-links d-flex mt-4">
+              <a href=" {% static 'website/' %} "><i class="bi bi-twitter-x"></i></a>
+              <a href=" {% static 'website/' %} "><i class="bi bi-facebook"></i></a>
+              <a href=" {% static 'website/' %} "><i class="bi bi-instagram"></i></a>
+              <a href=" {% static 'website/' %} "><i class="bi bi-linkedin"></i></a>
+            </div> {% endcomment %}
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Bližnjice</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Domov</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> O nas</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Storitve</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Portfelj</a></li>
+            </ul>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container text-center">
+        &copy; {% now "Y" %} Tlaki Pikelj. All rights reserved.
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] {% static 'website/ -->' %} 
+          {% comment %} Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> {% endcomment %}
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src=" {% static 'website/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/php-email-form/validate.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/aos/aos.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/swiper/swiper-bundle.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/glightbox/js/glightbox.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/isotope-layout/isotope.pkgd.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/purecounter/purecounter_vanilla.js' %} "></script>
+
+  <!-- Main JS File -->
+  <script src=" {% static 'website/assets/js/main.js' %} "></script>
+
+</body>
+
+</html>
