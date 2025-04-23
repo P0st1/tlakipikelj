@@ -1,0 +1,1 @@
+web: gunicorn tlaki_pikelj.wsgi
