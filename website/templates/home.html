@@ -10,8 +10,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href=" {% static 'website/assets/img/favicon.png' %} " rel="icon">
-  <link href=" {% static 'website/assets/img/apple-touch-icon.png' %} " rel="apple-touch-icon">
+  <link href=" {% static 'website/assets/img/favicon1.png' %} " rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -100,6 +99,68 @@
     border-radius: 4px;
   }
   
+  #testimonialModal .form-control {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  }
+  #testimonialModal textarea {
+    resize: vertical;
+  }
+  #testimonialModal .btn-primary {
+    background: var(--accent-color);
+    border: 1px solid #88e9e1;
+    padding: 6px 4px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100%;
+  }
+  #testimonialModal .btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  #testimonialModal .rating {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  #testimonialModal .rating input {
+    display: none;
+  }
+  #testimonialModal .rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+  #testimonialModal .rating label:before {
+    content: '\2605';
+    font-size: 24px;
+    color: #ddd;
+  }
+  #testimonialModal .rating input:checked ~ label:before {
+    color: #f90;
+  }
+  .dark-modal {
+    background-color: #222;
+    color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #444;
+    padding: 20px;
+  }
+  .dark-modal .btn-outline-light {
+    border-color: #88e9e1;
+    color: #f8f9fa;
+  }
+  .dark-modal .btn-outline-light:hover {
+    background-color: #88e9e1;
+    color: #222;
+  }
 
 </style>
 <body class="index-page">
@@ -722,62 +783,18 @@
   <!-- Main JS File -->
   <script src=" {% static 'website/assets/js/main.js' %} "></script>
   {% block extrascripts %}
-
+  {% if message_sent %}
+  <script>
+    window.onload = () => {
+      const myModal = new bootstrap.Modal(document.getElementById('successModal'));
+      myModal.show();
+    }
+  </script>
+  {% endif %}
   {% endblock %}
 </body>
 <!-- Modal -->
 <div class="modal fade" id="testimonialModal" tabindex="-1" aria-labelledby="testimonialModalLabel" aria-hidden="true">
-  <style>
-    #testimonialModal .form-control {
-      width: calc(100% - 10px);
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-      background: #fff;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-    }
-    #testimonialModal textarea {
-      resize: vertical;
-    }
-    #testimonialModal .btn-primary {
-      background: var(--color-primary);
-      border: 1px solid white;
-      padding: 10px 5px;
-      color: #fff;
-      transition: 0.4s;
-      border-radius: 4px;
-      margin-top: 5px;
-      width: 100%;
-    }
-    #testimonialModal .btn-primary:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-color: white;
-    }
-    #testimonialModal .rating {
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-    #testimonialModal .rating input {
-      display: none;
-    }
-    #testimonialModal .rating label {
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      float: right;
-    }
-    #testimonialModal .rating label:before {
-      content: '\2605';
-      font-size: 24px;
-      color: #ddd;
-    }
-    #testimonialModal .rating input:checked ~ label:before {
-      color: #f90;
-    }
-  </style>
-
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="background-color: black; border: 1px solid white;">
       <div class="modal-header">
@@ -811,6 +828,17 @@
   </div>
 </div>
 
-
+<!-- Dark themed success modal -->
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content dark-modal">
+      <div class="modal-body text-center">
+        <h5>Hvala, {{ sent_name }}!</h5>
+        <p>Vaše sporočilo je bilo uspešno poslano, kontaktirali Vas bomo v kratkem.</p>
+        <button type="button" class="btn btn-outline-light mt-2 btn-sm" data-bs-dismiss="modal">Zapri</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

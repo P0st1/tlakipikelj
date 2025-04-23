@@ -7,7 +7,9 @@ from .forms import TestimonialForm
 
 def home(request):
     testimonial_form = TestimonialForm()
-    
+    message_sent = False
+    name = ''
+
     if request.method == 'POST':
         if 'message' in request.POST and 'phone' in request.POST:
             name = request.POST.get('name')
@@ -16,7 +18,7 @@ def home(request):
             message = request.POST.get('message')
 
             formatted_message = f"Ime in priimek: {name}\nTelefonska številka: {phone}\nZadeva: {subject}\nSporočilo: {message}"
-            
+
             try:
                 send_mail(
                     subject="Nova stranka pošilja povpraševanje",
@@ -24,7 +26,7 @@ def home(request):
                     from_email=settings.EMAIL_HOST_USER,
                     recipient_list=['pikeljtlaki@gmail.com'],
                 )
-                return render(request, 'success_message.html', {'name': name})
+                message_sent = True  
             except Exception as e:
                 print(f"Napaka pri pošiljanju: {e}")
 
@@ -32,11 +34,14 @@ def home(request):
             testimonial_form = TestimonialForm(request.POST)
             if testimonial_form.is_valid():
                 testimonial_form.save()
-                return redirect('home')  
+                return redirect('home')
 
     testimonials = Testimonial.objects.all()
     return render(request, 'home.html', {
         'testimonials': testimonials,
         'testimonial_form': testimonial_form,
+        'message_sent': message_sent,  
+        'sent_name': name,
     })
+
 
