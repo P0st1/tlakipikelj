@@ -14,10 +14,11 @@ def home(request):
         if 'message' in request.POST and 'phone' in request.POST:
             name = request.POST.get('name')
             phone = request.POST.get('phone')
-            subject = request.POST.get('subject')
+            location = request.POST.get('location')
+            area = request.POST.get('area')            
             message = request.POST.get('message')
 
-            formatted_message = f"Ime in priimek: {name}\nTelefonska številka: {phone}\nZadeva: {subject}\nSporočilo: {message}"
+            formatted_message = f"Ime in priimek: {name}\nTelefonska številka: {phone}\nLokacija: {location}\nKvadratura: {area}\nSporočilo: {message}"
 
             try:
                 send_mail(

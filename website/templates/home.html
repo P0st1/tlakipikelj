@@ -10,7 +10,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href=" {% static 'website/assets/img/favicon1.png' %} " rel="icon">
+  <link href=" {% static 'website/assets/img/logotip.jpg' %} " rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,13 +27,8 @@
   <!-- Main CSS File -->
   <link href="{% static 'website/assets/css/main.css' %}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Gp
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Updated: Aug 15 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1R0LG9VNP"></script>
+
 </head>
 <style>
   /* Fonts */
@@ -161,6 +156,10 @@
     background-color: #88e9e1;
     color: #222;
   }
+  html, body {
+    overscroll-behavior: none;
+    color: black;
+  }
 
 </style>
 <body class="index-page">
@@ -170,7 +169,7 @@
 
       <a href="#hero" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src=" {% static 'website/assets/img/logo.png' %} " alt=""> -->
+         <img src=" {% static 'website/assets/img/logotip.jpg' %} " alt="">
         <h1 class="sitename">TlakiPikelj</h1>
         <span>.</span>
       </a>
@@ -203,8 +202,8 @@
 
         <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-6 col-lg-8">
-            <h2>Strokovnjaki za tlake <span>.</span></h2>
-            <p>Za vsak dom, delavnico ali industrijsko halo</p>
+            <h2>Strokovnjaki za beton<span>.</span></h2>
+            <p>Za vsak dom, delavnico ali industrijski objekt</p>
           </div>
         </div>
 
@@ -308,7 +307,7 @@
             <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-tools flex-shrink-0"></i>
               <div>
-                <h4>Izvedba tlakov</h4>
+                <h4>Izvedba del</h4>
                 <p>Profesionalna izvedba del v dogovorjenem roku.</p>
               </div>
             </div>
@@ -337,7 +336,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-tools"></i>
+                <i class="bi bi-layers"></i>
               </div>
               <h3>Strojni estrihi</h3>
               <p>Estrihi za stanovanjske in poslovne prostore.</p>
@@ -359,8 +358,9 @@
               <div class="icon">
                 <i class="bi bi-disc"></i>
               </div>
-              <h3>Brušenje tlakov</h3>
-              <p>Natančno brušenje za ravne in estetsko dovršene površine.</p>
+              <h3>Brušenje ali štokanje betona</h3>
+              <p>Natančna obdelava betonskih površin za gladek videz, večjo oprijemljivost in estetsko dovršenost.
+              </p>
             </div>
           </div><!-- End Service Item -->
 
@@ -369,8 +369,8 @@
               <div class="icon">
                 <i class="bi bi-scissors"></i>
               </div>
-              <h3>Dilitacije</h3>
-              <p>Pravilno izvedene dilitacije preprečijo razpoke in omogočajo dolgoročno stabilnost tlakov.</p>
+              <h3>Dilatacije</h3>
+              <p>Pravilno izvedene dilatacije preprečijo razpoke in omogočajo dolgoročno stabilnost betona.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -379,18 +379,18 @@
               <div class="icon">
                 <i class="bi bi-droplet-half"></i>
               </div>
-              <h3>Hidroizolacije</h3>
-              <p>Zaščita vaših prostorov pred vlago in zamakanjem.</p>
+              <h3>Impregnacije</h3>
+              <p>Zaščita betonskih površin pred vlago, olji in drugimi zunanjimi vplivi za daljšo obstojnost in boljši videz.</p>
             </div>
           </div><!-- End Service Item -->
-
+          
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-box"></i>
               </div>
               <h3>Ostale storitve</h3>
-              <p>Dodatne rešitve za vse vrste tlakov in površin.</p>
+              <p>Dodatne rešitve za vse vrste betona, tlakov in površin.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -420,109 +420,162 @@
     </section><!-- /Call To Action Section -->
 
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfelj</h2>
         <p>Oglejte si naše projekte</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Vse</li>
-            <li data-filter=".filter-app">Strojni tlaki</li>
-            <li data-filter=".filter-product">Brušen beton</li>
-            <li data-filter=".filter-branding">Dilitacije</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-1.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Strojni tlaki 1</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Brušen beton 1</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-3.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dilitacije 1</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-4.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Strojni tlaki 2</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-5.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Brušen beton 2</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-6.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dilitacije 2</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-7.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Strojni tlaki 3</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-8.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Brušen beton 3</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src=" {% static 'website/assets/img/masonry-portfolio/masonry-portfolio-9.jpg' %} " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dilitacije 3</h4>
-                <p>Opis</p>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
       </div>
-
-    </section><!-- /Portfolio Section -->
-
-
+    
+      <div class="container">
+        <div class="isotope-layout" data-default-filter=".filter-app" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*">Vse</li>
+            <li data-filter=".filter-app"  class="filter-active">Industrijski tlaki</li>
+            <li data-filter=".filter-product">Brušen beton</li>
+            <li data-filter=".filter-branding">Štokan beton</li>
+            <li data-filter=".filter-metlican">Metličen beton</li>
+            <li data-filter=".filter-filling">Vgradnja betona</li>
+          </ul>
+    
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-1.jpg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-1.jpg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Industrijski tlaki</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Brušen beton</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-3.jpg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-3.jpg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Štokan beton</h4>
+                <p>Izvedba štokanja betona z diletacijami</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-metlican">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-10.jpeg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-10.jpeg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Metličen beton</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-4.jpg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-4.jpg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Industrijski tlaki</h4>
+                <p>Zaglajevanje kvarčnega posipa</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-5.jpg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-5.jpg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Brušen beton</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-6.jpeg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-6.jpeg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Štokan beton</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-filling">
+              <video class="img-fluid" controls muted playsinline>
+                <source src="{% static 'website/assets/img/masonry-portfolio/video3.mov' %}" type="video/mp4">
+                Tvoj brskalnik ne podpira videoposnetka.
+              </video>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-filling">
+              <video class="img-fluid" controls muted playsinline>
+                <source src="{% static 'website/assets/img/masonry-portfolio/video.mov' %}" type="video/mp4">
+                Tvoj brskalnik ne podpira videoposnetka.
+              </video>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-metlican">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-11.jpg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-11.jpg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Metličen beton</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-7.jpeg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-7.jpeg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Industrijski tlaki</h4>
+                <p>Zaglajevanje kvarčnega posipa</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-8.jpeg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-8.jpeg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Brušen beton</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-filling">
+              <video class="img-fluid" controls muted playsinline>
+                <source src="{% static 'website/assets/img/masonry-portfolio/video2.mov' %}" type="video/mp4">
+                Tvoj brskalnik ne podpira videoposnetka.
+              </video>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-metlican">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-12.jpg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-12.jpg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Metličen beton</h4>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <a href="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-9.jpeg' %}" class="glightbox">
+                <img src="{% static 'website/assets/img/masonry-portfolio/masonry-portfolio-9.jpeg' %}" class="img-fluid" alt="">
+              </a>
+              <div class="portfolio-info">
+                <h4>Štokan beton</h4>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section dark-background">
 
@@ -639,9 +692,17 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-         {% comment %} <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->  {% endcomment %}
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe
+            style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10968.870839041138!2d15.061620357739251!3d45.91978903919878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47650492bc18f2d1%3A0x6fd55b4c9fd6d04f!2s8210%20Gradi%C5%A1%C4%8De%20pri%20Trebnjem!5e0!3m2!1ssl!2ssi!4v1745585505919!5m2!1ssl!2ssi"
+            frameborder="0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div><!-- End Google Maps -->
+        
 
         <div class="row gy-4">
 
@@ -658,7 +719,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Telefon</h3>
-                <p>040 823 788</p>
+                <p>040 823 788<br>040 823 724</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -666,7 +727,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>E-pošta</h3>
-                <p>tlakipikelj@gmail.com</p>
+                <p>tlaki.pikelj@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -685,12 +746,16 @@
                   <input type="text" class="form-control" name="phone" placeholder="Vaš Telefon" required="">
                 </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Zadeva" required="">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="location" placeholder="Vaša Lokacija" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="area" placeholder="Kvadratura objekta (m2)" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Sporočilo" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Vaše Sporočilo" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -716,21 +781,24 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href=" {% static 'website/index.html' %} " class="logo d-flex align-items-center">
+            <a href=" {% static 'home' %} " class="logo d-flex align-items-center">
+              <img src=" {% static 'website/assets/img/logotip.jpg' %} " alt="">
               <span class="sitename">Tlaki Pikelj</span>
             </a>
             <div class="footer-contact pt-3">
               <p>Gradišče pri Trebnjem</p>
               <p>Trebnje, 8210</p>
-              <p class="mt-3"><strong>Telefon:</strong> <span>040 823 788</span></p>
-              <p><strong>Email:</strong> <span>pikeljtlaki@gmail.com</span></p>
+              <p class="mt-1"><strong>Telefon:</strong></p> 
+              <p><span>040 823 788 <br> 040 823 724</span></p>
+              <p><strong>Email:</strong></p>
+              <p><span>tlaki.pikelj@gmail.com</span></p>
             </div>
-            {% comment %} <div class="social-links d-flex mt-4">
+             {% comment %} <div class="social-links d-flex mt-4">
               <a href=" {% static 'website/' %} "><i class="bi bi-twitter-x"></i></a>
               <a href=" {% static 'website/' %} "><i class="bi bi-facebook"></i></a>
               <a href=" {% static 'website/' %} "><i class="bi bi-instagram"></i></a>
               <a href=" {% static 'website/' %} "><i class="bi bi-linkedin"></i></a>
-            </div> {% endcomment %}
+            </div>  {% endcomment %}
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
@@ -752,13 +820,8 @@
 
     <div class="copyright">
       <div class="container text-center">
-        &copy; {% now "Y" %} Tlaki Pikelj. All rights reserved.
+        &copy; {% now "Y" %} Tlaki Pikelj. Vse pravice zadržane.
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] {% static 'website/ -->' %} 
-          {% comment %} Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> {% endcomment %}
         </div>
       </div>
     </div>
@@ -780,6 +843,9 @@
   <script src=" {% static 'website/assets/vendor/isotope-layout/isotope.pkgd.min.js' %} "></script>
   <script src=" {% static 'website/assets/vendor/purecounter/purecounter_vanilla.js' %} "></script>
 
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+
   <!-- Main JS File -->
   <script src=" {% static 'website/assets/js/main.js' %} "></script>
   {% block extrascripts %}
@@ -790,6 +856,19 @@
       myModal.show();
     }
   </script>
+  <script>
+    const lightbox = GLightbox({});
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E1R0LG9VNP');
+  </script>
+  <script>
+    
+</script>
   {% endif %}
   {% endblock %}
 </body>
